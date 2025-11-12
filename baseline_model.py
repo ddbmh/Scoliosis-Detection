@@ -8,7 +8,6 @@ import numpy as np
 import os
 import math 
 
-# import cv2 # Requires opencv-python -- THIS LINE IS NOT NEEDED
 # --- Configuration ---
 IMG_WIDTH, IMG_HEIGHT = 224, 224
 BATCH_SIZE = 32
@@ -101,8 +100,8 @@ def main():
     try:
         train_gen, valid_gen = get_data_generators()
         
-        label_0 = train_gen.class_indices['Normal'] # 应该是 0
-        label_1 = train_gen.class_indices['Scol'] # 应该是 1
+        label_0 = train_gen.class_indices['Normal'] 
+        label_1 = train_gen.class_indices['Scol'] 
 
         total_samples = train_gen.samples
         count_0 = np.sum(train_gen.labels == label_0)
