@@ -13,7 +13,7 @@ The codebase reflects the iterative development process of the project, moving f
 | **`baseline_model_with_seed_and_gradcam.py`** | **Reproducibility & Explainability:** It ensures reproducibility by fixing random seeds and integrates **Grad-CAM** to visualize the regions of the spine the model focuses on. |
 | **`baseline_model_with_finetune.py`** | **Transfer Learning:** Implements fine-tuning strategies. This script explores freezing different layers fine-tuning to adapt pre-trained weights to our medical dataset. |
 | **`baseline_model_with_focalloss.py`** | **Handling Imbalance:** Addresses class imbalance issues in the dataset by replacing standard Cross-Entropy Loss with **Focal Loss**, focusing the model on hard-to-classify examples. |
-| **`baseline_model_with modeltype.py`** | **Architecture Search:** The final version,the default model is DenseNet201.  An extension of the baseline that allows for modular switching between different model architectures (e.g., ResNet-50, DenseNet201) to compare their effectiveness. |
+| **`baseline_model_with modeltype.py`** | **The final version:** The default model is DenseNet201.  An extension of the baseline that allows for modular switching between different model architectures (e.g., ResNet-50, DenseNet201) to compare their effectiveness. |
 
 ```bash
 python baseline_model_*.py
