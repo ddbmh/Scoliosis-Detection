@@ -2,7 +2,7 @@
 
 This repository contains the code and experimental history for final project. The objective of this project is to detect and classify scoliosis from X-ray images using Deep Learning techniques.
 
-We established a strong baseline using ResNet and progressively improved performance through various experiments involving loss functions, fine-tuning strategies, and model architecture variations. 
+We established a strong baseline using ResNet and progressively improved performance through various experiments involving loss functions, fine-tuning strategies, and model architecture variations. The final version's model type  is DenseNet201.
 ## 📂 File Structure & Project Evolution
 
 The codebase reflects the iterative development process of the project, moving from a simple baseline to a more sophisticated, interpretable model.
